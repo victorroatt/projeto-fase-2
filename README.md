@@ -1,6 +1,6 @@
 # Guia do projeto
 
-**Projeto -** colocar o link aqui
+**Projeto -** https://github.com/victorroatt/projeto-fase-2
 
 Para o comando clone, devemos estar no local onde queremos criar a pasta do projeto, exemplo abaixo:
 
