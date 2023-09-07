@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="./assets/style/bootstrap.min.css" />
+
+    <title>Petshop</title>
+
+    <style>
+      footer {
+        background-color: black;
+        height: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-black p-2">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light fs-3" href="index.html">Petshop</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-light"
+                aria-current="page"
+                href="./pages/cadastroPet.html"
+                >Cadastrar Pet</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex">
+          <form id="form_search" class="d-flex me-3" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              name="search"
+              aria-label="Search"
+            />
+            <button class="btn btn-dark border-0" type="submit">Buscar</button>
+          </form>
+          <a class="btn btn-dark bg-black border-0" href="./pages/login.html">Entrar</a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="container-fluid mt-3">
+        <div class="alert bg-black text-light fs-5 fw-bold" role="alert">
+          Produtos
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-evenly">
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./assets/images/gato-umida-premier.jpg"
+                class="card-img-top"
+                alt="Ração Úmida Premier de Gato"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ração Úmida Premier</h5>
+                <p class="card-text">
+                  Gatos Adultos Sabor Frango, Chia e Quinoa 70g
+                </p>
+                <p class="card-text fs-5 fw-bold">R$ 7,99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./assets/images/cachorro-seca-premier.jpg"
+                class="card-img-top"
+                alt="Ração Premier Fórmula"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ração Premier Fórmula</h5>
+                <p class="card-text">
+                  Cães Sênior de Porte Grande e Gigante Sabor Frango 15kg
+                </p>
+                <p class="card-text fs-5 fw-bold">R$ 251,89</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./assets/images/gato-umida-golden.jpg"
+                class="card-img-top"
+                alt="Ração Úmida Golden"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ração Úmida Golden</h5>
+                <p class="card-text">Gatos Castrados Sabor Frango 70g</p>
+                <p class="card-text fs-5 fw-bold">R$ 4,29</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./assets/images/cachorro-umida-golden.jpg"
+                class="card-img-top"
+                alt="Ração Úmida Golden"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ração Úmida Golden</h5>
+                <p class="card-text">Cães Filhotes Sabor Frango 85g</p>
+                <p class="card-text fs-5 fw-bold">R$ 3,59</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./assets/images/gato-seca-golden.jpg"
+                class="card-img-top"
+                alt="Ração Seca Golden"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ração Seca Golden</h5>
+                <p class="card-text">Gatos Adultos Sabor Carne</p>
+                <p class="card-text fs-5 fw-bold">R$ 26,90</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./assets/images/cachorro-seca-selecao.jpg"
+                class="card-img-top"
+                alt="Ração Golden Seleção"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ração Golden Seleção</h5>
+                <p class="card-text">
+                  Cães Adultos Sabor Frango com Batata Doce 12kg
+                </p>
+                <p class="card-text fs-5 fw-bold">R$ 169,89</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid mt-3">
+        <div class="alert bg-black text-light fs-5 fw-bold" role="alert">
+          Serviços
+        </div>
+        <div
+          class="row row-cols-1 row-cols-md-4 g-4 justify-content-evenly mb-3"
+        >
+          <div class="col">
+            <div class="card h-100" onclick="goToAgendamento('banho')">
+              <img
+                src="./assets/images/banho.jpg"
+                class="card-img-top"
+                alt="Banho"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Banho</h5>
+                <p class="card-text">
+                  Banho, secagem, escova dos pelos, limpeza dos ouvidos e corte
+                  das unhas
+                </p>
+                <p class="card-text fs-5 fw-bold">R$ 62,99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" onclick="goToAgendamento('tosa')">
+              <img
+                src="./assets/images/tosa.jpg"
+                class="card-img-top"
+                alt="Tosa"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tosa</h5>
+                <p class="card-text">
+                  Cuidados estéticos, manutenção da boa saúde e higiene
+                </p>
+                <p class="card-text fs-5 fw-bold">R$ 89,89</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div
+        class="d-flex justify-content-between align-items-center"
+        style="height: 100%"
+      >
+        <span h class="text-light fs-3 ms-3">Petshop</span>
+        <span class="text-light fs-5">
+          Rua Joaquim Barbosa, 8956, Loja 5. CEP: 910416-65
+        </span>
+        <span class="text-light fs-4 me-3">Victor Roatt Refosco</span>
+      </div>
+    </footer>
+
+    <script src="./assets/scripts/bootstrap.bundle.min.js"></script>
+    <script src="./assets/scripts/session.js"></script>
+    <script>
+      function goToAgendamento(servico) {
+        localStorage.setItem("servico", servico);
+        window.location.href = "./pages/agendarServico.html";
+      }
+    </script>
+  </body>
+</html>

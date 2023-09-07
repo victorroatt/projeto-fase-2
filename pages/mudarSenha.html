@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/style/bootstrap.min.css" />
+    <title>Login</title>
+  </head>
+
+  <style>
+    .centered {
+      border: 2px solid;
+      border-radius: 15px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 400px;
+      height: auto;
+      transform: translate(-50%, -50%);
+      padding: 25px;
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-black p-2">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light fs-3" href="../index.html">Petshop</a>
+      </div>
+    </nav>
+    <div class="centered">
+      <p class="text-center fs-4 fw-bold">Criar Nova Senha</p>
+
+      <form
+        action="https://formsubmit.co/victorroatt6@hotmail.com"
+        method="POST"
+      >
+        <div class="mb-3">
+          <label for="password" class="form-label">Nova Senha</label>
+          <input
+            type="password"
+            class="form-control border-black shadow-sm"
+            id="password"
+            name="senha"
+            placeholder="Digite sua senha..."
+            minlength="6"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="new_password" class="form-label">Confirmação Senha</label>
+          <input
+            type="password"
+            class="form-control border-black shadow-sm"
+            id="new_password"
+            name="nova_senha"
+            placeholder="Digite sua nova senha..."
+            minlength="6"
+            required
+          />
+        </div>
+        <div class="d-flex flex-column justify-content-center">
+          <button type="submit" class="btn bg-black text-light">
+            Modificar Senha
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script src="../assets/scripts/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
